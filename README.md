@@ -5,7 +5,7 @@ This Repository is for my projects piscine 1337 July 2024
 # Handle Errors CLI
 
 
-~THIS PART IS WROTE BY MY FRIEND ISMAEL~
+> THIS PART IS WROTE BY MY FRIEND ISMAEL
 
 ## C NOTES
 
