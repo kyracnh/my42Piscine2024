@@ -55,3 +55,27 @@ The term unistd comes from "UNIX Standard" or "UNIX Standard Interface," and it 
 	▪	Preprocessor Directive: #include is a preprocessor directive in C. Preprocessor directives are commands that are processed by the preprocessor before the actual compilation of code begins.
 
 	▪	Purpose: The primary purpose of #include is to incorporate the contents of one file into another. This is often used to include header files that contain declarations and macros that are needed in different parts of a program.
+
+
+
+
+==================================
+## STRCMP
+
+Cette fonction permet de comparer deux chaînes de caractères et de savoir si la première est inférieure, égale ou supérieure à la seconde. Cette comparaison sera réalisée en utilisant l'ordre lexicographique et donc, en tenant compte des valeurs numérique des codes ASCII (ou Unicode, selon l'encodage utilisé) des différents caractères comparés. 
+
+En langage C, les chaînes de caractères sont qualifiées d'AZT : A Zéro Terminal. Cela signifie qu'une chaîne de caractères se termine forcément par un code ASCII nul (pouvant aussi être représenté par '\0'). 
+
+# STRNCMP
+
+Cette fonction permet de comparer deux chaînes de caractères et de savoir si la première est inférieure, égale ou supérieure à la seconde. Cette comparaison sera faite dans l'ordre lexicographique (et donc, en tenant compte des valeurs ASCII des différents caractères comparés). Néanmoins la comparaison se fera au maximum sur les length premiers caractères.
+
+Paramètres
+
+    first : la première chaîne de caractères à comparer.
+    second : la seconde chaîne de caractères à comparer.
+    length : le nombre maximal (un entier non signé) de caractères à comparer.
+
+Valeur de retour
+
+Trois cas distincts doivent être considérés. Soit les deux chaînes sont égales : dans ce cas, une valeur nulle sera retournée. Soit la première chaîne est plus petite que la seconde (dans l'ordre lexicographique) : dans ce cas, une valeur négative sera retournée. Soit la première chaîne est plus grande que la seconde : dans ce dernier cas, une valeur positive sera renvoyées. Dans tous les cas, la valeur absolue indiquera la position du premier caractères permettant de produire le résultat. 
