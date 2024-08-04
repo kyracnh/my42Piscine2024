@@ -79,3 +79,6 @@ Paramètres
 Valeur de retour
 
 Trois cas distincts doivent être considérés. Soit les deux chaînes sont égales : dans ce cas, une valeur nulle sera retournée. Soit la première chaîne est plus petite que la seconde (dans l'ordre lexicographique) : dans ce cas, une valeur négative sera retournée. Soit la première chaîne est plus grande que la seconde : dans ce dernier cas, une valeur positive sera renvoyées. Dans tous les cas, la valeur absolue indiquera la position du premier caractères permettant de produire le résultat. 
+
+# STRCAT
+Cette fonction permet de rajouter à une chaîne de caractères déjà existante le contenu d'une seconde. Autrement dit de concaténer les contenu de deux chaînes de caractères, mais le résultat sera stocké dans la première chaîne passé en paramètre (aucune nouvelle chaîne ne sera produite). Bien entendu le bloc de mémoire devant recevoir le contenu à concaténer doit être alloué de manière à être suffisament grand pour contenir la totalité des deux chaînes caractères. 
