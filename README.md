@@ -82,3 +82,13 @@ Trois cas distincts doivent être considérés. Soit les deux chaînes sont éga
 
 # STRCAT
 Cette fonction permet de rajouter à une chaîne de caractères déjà existante le contenu d'une seconde. Autrement dit de concaténer les contenu de deux chaînes de caractères, mais le résultat sera stocké dans la première chaîne passé en paramètre (aucune nouvelle chaîne ne sera produite). Bien entendu le bloc de mémoire devant recevoir le contenu à concaténer doit être alloué de manière à être suffisament grand pour contenir la totalité des deux chaînes caractères. 
+
+## White spaces
+In ASCII (American Standard Code for Information Interchange), whitespace characters are those that provide space in text without rendering any visible mark. These characters include:
+
+Space (SP) - ASCII code 32.
+Horizontal Tab (HT) - ASCII code 9.
+Line Feed (LF) - ASCII code 10, also known as newline.
+Carriage Return (CR) - ASCII code 13.
+Vertical Tab (VT) - ASCII code 11.
+Form Feed (FF) - ASCII code 12.
