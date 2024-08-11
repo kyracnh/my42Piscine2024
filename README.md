@@ -102,3 +102,8 @@ The wc command stands for word count, and it is used to count lines, words, and 
     -l: Counts the number of lines.
     -w: Counts the number of words.
     -c: Counts the number of characters.
+
+## awk
+Is a command-line tool for processing and analyzing text data.
+## sed
+Stands for stream editor, and it's used for basic text transformations. 
