@@ -107,3 +107,6 @@ The wc command stands for word count, and it is used to count lines, words, and 
 Is a command-line tool for processing and analyzing text data.
 ## sed
 Stands for stream editor, and it's used for basic text transformations. 
+
+* 's/ //g'
+This stands for "global". It tells sed to replace all occurrences of the pattern in each line, not just the first occurrence. Without the g flag, only the first occurrence of the pattern in each line would be replaced.
