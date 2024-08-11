@@ -92,3 +92,13 @@ Line Feed (LF) - ASCII code 10, also known as newline.
 Carriage Return (CR) - ASCII code 13.
 Vertical Tab (VT) - ASCII code 11.
 Form Feed (FF) - ASCII code 12.
+
+
+
+## wc Command
+
+The wc command stands for word count, and it is used to count lines, words, and characters in text files or input streams. The command has several options:
+
+    -l: Counts the number of lines.
+    -w: Counts the number of words.
+    -c: Counts the number of characters.
