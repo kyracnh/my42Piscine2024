@@ -6,11 +6,12 @@
 /*   By: aanmazir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 09:14:51 by aanmazir          #+#    #+#             */
-/*   Updated: 2024/08/05 11:01:42 by aanmazir         ###   ########.fr       */
+/*   Updated: 2024/08/06 14:29:43 by aanmazir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
 void	ft_putstr(char *c)
 {
 	int	i;
@@ -19,10 +20,12 @@ void	ft_putstr(char *c)
 	while (c[i] != '\0')
 		write(1, &c[i++], 1);
 }
+
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+
 void	ft_putnbr(int nb)
 {
 	if (nb == -2147483648)
@@ -31,17 +34,14 @@ void	ft_putnbr(int nb)
 	{
 		ft_putchar('-');
 		ft_putnbr(-nb);
-	}else if (nb > 9)
+	}
+	else if (nb > 9)
 	{
 		ft_putnbr(nb / 10);
 		ft_putchar(nb % 10 + 48);
-	}else{
+	}
+	else
+	{
 		ft_putchar(nb + 48);
 	}
-}
-int main()
-{
-	ft_putnbr();
-	write(1, "\n", 1);
-	return 0;
 }

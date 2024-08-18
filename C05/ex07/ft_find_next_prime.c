@@ -1,22 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aanmazir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/05 08:51:33 by aanmazir          #+#    #+#             */
-/*   Updated: 2024/08/06 14:26:13 by aanmazir         ###   ########.fr       */
+/*   Created: 2024/08/07 17:36:45 by aanmazir          #+#    #+#             */
+/*   Updated: 2024/08/08 10:05:09 by aanmazir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int	ft_is_prime(int nb)
 {
-	int	i;
+	int	counter;
 
-	i = 0;
-	while (str[i] != '\0')
-		write(1, &str[i++], 1);
+	counter = 2;
+	if (nb <= 1)
+		return (0);
+	while (counter <= (nb / 2))
+	{
+		if (!(nb % counter))
+			return (0);
+		else
+			counter += 1;
+	}
+	return (1);
+}
+
+int	ft_find_next_prime(int nb)
+{
+	if (nb <= 2)
+		return (2);
+	while (nb > 2)
+	{
+		if (ft_is_prime(nb) == 1)
+			return (nb);
+		nb++;
+	}
+	return (0);
 }

@@ -1,21 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aanmazir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/05 08:42:54 by aanmazir          #+#    #+#             */
-/*   Updated: 2024/08/06 14:24:58 by aanmazir         ###   ########.fr       */
+/*   Created: 2024/08/10 11:28:57 by aanmazir          #+#    #+#             */
+/*   Updated: 2024/08/12 16:30:24 by aanmazir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <stdlib.h>
+#include <stddef.h>
+#include <stdio.h>
+
+int	fstrlen(char *str)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (str[i] != '\0')
 		i++;
 	return (i);
 }
+
+char	*ft_strdup(char *src)
+{
+	char	*new;
+	int		i;
+
+	i = 0;
+	new = (char *)malloc(sizeof(char) * fstrlen(src) + 1);
+	if (new == NULL)
+		return (NULL);
+	while (src[i] != '\0')
+	{
+		new[i] = src[i];
+		i++;
+	}
+	new[i] = '\0';
+	return (new);
+}
+/*int main()
+{
+	char *h = ft_strdup("Hello");
+	printf("%s\n", h);
+	printf("%lu\n", sizeof(ft_strdup(h)));
+}*/

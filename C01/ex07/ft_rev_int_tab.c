@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aanmazir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/05 08:51:33 by aanmazir          #+#    #+#             */
-/*   Updated: 2024/08/06 14:26:13 by aanmazir         ###   ########.fr       */
+/*   Created: 2024/07/28 17:36:08 by aanmazir          #+#    #+#             */
+/*   Updated: 2024/07/29 18:39:12 by aanmazir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+void	ft_rev_int_tab(int *tab, int size)
 {
+	int	swp;
 	int	i;
+	int	j;
 
 	i = 0;
-	while (str[i] != '\0')
-		write(1, &str[i++], 1);
+	j = size - 1;
+	while (i < j)
+	{
+		swp = tab[i];
+		tab[i] = tab[j];
+		tab[j] = swp;
+		i++;
+		j--;
+	}
 }

@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aanmazir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/05 08:51:33 by aanmazir          #+#    #+#             */
-/*   Updated: 2024/08/06 14:26:13 by aanmazir         ###   ########.fr       */
+/*   Created: 2024/08/08 11:49:47 by aanmazir          #+#    #+#             */
+/*   Updated: 2024/08/10 12:48:06 by aanmazir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putstr(char *str)
+int	main(int arc, char **arv)
 {
 	int	i;
 
+	arc = 0;
 	i = 0;
-	while (str[i] != '\0')
-		write(1, &str[i++], 1);
+	while (arv[0][i] != '\0')
+	{
+		write(1, &arv[0][i], 1);
+		i++;
+	}
+	write(1, "\n", 1);
 }

@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aanmazir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/05 08:51:33 by aanmazir          #+#    #+#             */
-/*   Updated: 2024/08/06 14:26:13 by aanmazir         ###   ########.fr       */
+/*   Created: 2024/07/28 14:15:30 by aanmazir          #+#    #+#             */
+/*   Updated: 2024/07/29 18:37:34 by aanmazir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putstr(char *str)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int	i;
+	int	div;
+	int	mod;
 
-	i = 0;
-	while (str[i] != '\0')
-		write(1, &str[i++], 1);
+	div = (*a / *b);
+	mod = (*a % *b);
+	*a = div;
+	*b = mod;
 }
