@@ -2,20 +2,20 @@
 This Repository is for my projects piscine 1337 July 2024 ✍️
 
 
-# Handle Errors CLI
+## Handle Errors CLI
 
 
 > THIS PART IS WROTE BY MY FRIEND ISMAEL 🤝
 
-## C NOTES
+### C NOTES
 
-# Write Function :
+### Write Function :
 
 Write need : #include <unistd.h>
 Pour écrire un caractère sans adresse : write(1, “a”, 1)
 
 
-# Write
+## Write
 
 write(1, &c, 1)
 
