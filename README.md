@@ -1,7 +1,7 @@
 # my42Piscine2024 💎
 This Repository is for my projects piscine 1337 July 2024 ✍️
 
-
+------------------------------------------
 ## Handle Errors CLI
 
 
@@ -59,7 +59,7 @@ The term unistd comes from "UNIX Standard" or "UNIX Standard Interface," and it 
 
 
 
-==================================
+------------------------------------------
 ## STRCMP
 
 Cette fonction permet de comparer deux chaînes de caractères et de savoir si la première est inférieure, égale ou supérieure à la seconde. Cette comparaison sera réalisée en utilisant l'ordre lexicographique et donc, en tenant compte des valeurs numérique des codes ASCII (ou Unicode, selon l'encodage utilisé) des différents caractères comparés. 
