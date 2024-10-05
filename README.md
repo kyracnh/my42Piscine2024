@@ -1,8 +1,8 @@
-# my42Piscine2024 💎
+# 💎 my42Piscine2024
 This Repository is for my projects piscine 1337 July 2024 ✍️
 
 ------------------------------------------
-## Handle Errors CLI
+## 📌 Handle Errors CLI
 
 
 > THIS PART IS WROTE BY MY FRIEND ISMAEL 🤝
